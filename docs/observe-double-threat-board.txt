@@ -1,0 +1,96 @@
+Observe game: why Minimax lost (double threat)
+==============================================
+
+Source: your Observe log
+  Player 1 (red)  = Backprop value 2L (live)
+  Player 2 (yellow) = Minimax, 1 sec
+
+Column numbers match the UI (1-7 left to right).
+R = red, Y = yellow, . = empty.
+
+
+Move list (UI columns)
+----------------------
+Red:    2, 2, 3, 4, 7, 5, 3, 1, 1, 2, then 3 (winning move)
+Yellow: 4, 6, 4, 5, 4, 5, 5, 1, 4, 2
+
+
+Board BEFORE Yellow's last move
+--------------------------------
+Yellow to play. Red already has TWO different winning drops.
+
+      col:  1 2 3 4 5 6 7
+            . . . . . . .
+            . . . Y . . .
+            . . . Y Y . .
+            R R . R Y . .
+            Y R R Y R . .
+            R R R Y Y Y R
+
+Red immediate wins (if it were Red's turn):
+  - Column 2: three R already stacked in col 2; drop makes
+              four-in-a-row vertically in column 2.
+  - Column 3: pattern in col 3 is R, R, (empty), R from the
+              bottom; drop fills the hole and makes four
+              vertically in column 3.
+
+Yellow immediate wins: none.
+
+That is the double threat: two separate winning columns for Red.
+Yellow can place only one disc per turn, so Yellow can block at
+most one of those columns.
+
+
+What Yellow actually did
+------------------------
+Yellow played column 2 (blocks the column-2 vertical).
+
+      col:  1 2 3 4 5 6 7
+            . . . . . . .
+            . . . Y . . .
+            . Y . Y Y . .     <-- new Y in column 2
+            R R . R Y . .
+            Y R R Y R . .
+            R R R Y Y Y R
+
+Red's remaining win: column 3 only.
+
+
+What Red did next
+-----------------
+Red played column 3 and won (vertical four in column 3).
+
+      col:  1 2 3 4 5 6 7
+            . . . . . . .
+            . . . Y . . .
+            . Y . Y Y . .
+            R R R R Y . .     <-- new R in column 3 completes RRRR
+            Y R R Y R . .
+            R R R Y Y Y R
+
+
+Why the last Minimax think looked like "0.0 seconds"
+----------------------------------------------------
+The position before Yellow's last move was already a forced loss
+with perfect play: every Yellow reply leaves at least one Red win
+on the next move. Search proves that quickly, so the wall-clock
+think time rounds to 0.0s even though it still picks a blocking
+move (column 2) rather than a random column.
+
+
+Same board with the threats marked
+----------------------------------
+Before Yellow's last move, stars mark the two Red winning drops:
+
+      col:  1 2 3 4 5 6 7
+            . . . . . . .
+            . . . Y . . .
+            . . . Y Y . .
+            R R * R Y . .     * = Red win if dropped in col 3
+            Y R R Y R . .
+            R R R Y Y Y R
+              ^
+              * = Red win if dropped in col 2
+                 (lands on top of the three R in that column)
+
+Yellow can cover only one star per turn.
