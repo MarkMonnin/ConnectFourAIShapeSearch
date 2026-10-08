@@ -1,0 +1,765 @@
+{
+  "evalLevel": 2,
+  "beatRule": "winRate > 0.5",
+  "primaryMetric": "secondsToBeat",
+  "timeCapMult": 10,
+  "bestSeconds": 0.52,
+  "suiteSeconds": 13.5,
+  "trainOpponent": "random",
+  "opts": {
+    "algos": [
+      "reinforce_value2",
+      "nn_value3",
+      "tfjs_value",
+      "tfjs",
+      "reinforce_value3",
+      "nn_value2"
+    ],
+    "trainGames": 50,
+    "evalGames": 40,
+    "timeCapMult": 10,
+    "evalLevel": 2,
+    "maxSeconds": 90,
+    "outPath": "tests/bench-beat-minimax2-probe.json"
+  },
+  "ranking": [
+    {
+      "algo": "reinforce_value2",
+      "name": "REINFORCE value (2L)",
+      "beat": true,
+      "gaveUp": false,
+      "giveUpReason": null,
+      "secondsToBeat": 0.52,
+      "secondsUsed": 0.52,
+      "trainGames": 50,
+      "chunks": 1,
+      "finalWinRate": 0.525,
+      "timeBudgetSec": 90,
+      "trainGamesPerChunk": 50,
+      "evalGames": 40,
+      "history": [
+        {
+          "chunk": 1,
+          "trainGames": 50,
+          "seconds": 0.52,
+          "winRate": 0.525,
+          "wins": 21,
+          "draws": 0,
+          "losses": 19
+        }
+      ]
+    },
+    {
+      "algo": "nn_value2",
+      "name": "Backprop NN value (2L)",
+      "beat": true,
+      "gaveUp": false,
+      "giveUpReason": null,
+      "secondsToBeat": 0.96,
+      "secondsUsed": 0.96,
+      "trainGames": 150,
+      "chunks": 3,
+      "finalWinRate": 0.55,
+      "timeBudgetSec": 5.2,
+      "trainGamesPerChunk": 50,
+      "evalGames": 40,
+      "history": [
+        {
+          "chunk": 1,
+          "trainGames": 50,
+          "seconds": 0.34,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 2,
+          "trainGames": 100,
+          "seconds": 0.62,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 3,
+          "trainGames": 150,
+          "seconds": 0.96,
+          "winRate": 0.55,
+          "wins": 22,
+          "draws": 0,
+          "losses": 18
+        }
+      ]
+    },
+    {
+      "algo": "nn_value3",
+      "name": "Backprop NN value (3L)",
+      "beat": true,
+      "gaveUp": false,
+      "giveUpReason": null,
+      "secondsToBeat": 1.56,
+      "secondsUsed": 1.56,
+      "trainGames": 200,
+      "chunks": 4,
+      "finalWinRate": 0.6,
+      "timeBudgetSec": 5.2,
+      "trainGamesPerChunk": 50,
+      "evalGames": 40,
+      "history": [
+        {
+          "chunk": 1,
+          "trainGames": 50,
+          "seconds": 0.4,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 2,
+          "trainGames": 100,
+          "seconds": 0.74,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 3,
+          "trainGames": 150,
+          "seconds": 1.15,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 4,
+          "trainGames": 200,
+          "seconds": 1.56,
+          "winRate": 0.6,
+          "wins": 24,
+          "draws": 0,
+          "losses": 16
+        }
+      ]
+    },
+    {
+      "algo": "reinforce_value3",
+      "name": "REINFORCE value (3L)",
+      "beat": true,
+      "gaveUp": false,
+      "giveUpReason": null,
+      "secondsToBeat": 2.49,
+      "secondsUsed": 2.49,
+      "trainGames": 400,
+      "chunks": 8,
+      "finalWinRate": 0.525,
+      "timeBudgetSec": 5.2,
+      "trainGamesPerChunk": 50,
+      "evalGames": 40,
+      "history": [
+        {
+          "chunk": 1,
+          "trainGames": 50,
+          "seconds": 0.32,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 2,
+          "trainGames": 100,
+          "seconds": 0.62,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 3,
+          "trainGames": 150,
+          "seconds": 0.91,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 4,
+          "trainGames": 200,
+          "seconds": 1.3,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 5,
+          "trainGames": 250,
+          "seconds": 1.58,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 6,
+          "trainGames": 300,
+          "seconds": 1.86,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 7,
+          "trainGames": 350,
+          "seconds": 2.19,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 8,
+          "trainGames": 400,
+          "seconds": 2.49,
+          "winRate": 0.525,
+          "wins": 21,
+          "draws": 0,
+          "losses": 19
+        }
+      ]
+    },
+    {
+      "algo": "tfjs",
+      "name": "TF.js hybrid",
+      "beat": true,
+      "gaveUp": false,
+      "giveUpReason": null,
+      "secondsToBeat": 2.71,
+      "secondsUsed": 2.71,
+      "trainGames": 400,
+      "chunks": 8,
+      "finalWinRate": 0.525,
+      "timeBudgetSec": 5.2,
+      "trainGamesPerChunk": 50,
+      "evalGames": 40,
+      "history": [
+        {
+          "chunk": 1,
+          "trainGames": 50,
+          "seconds": 0.46,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 2,
+          "trainGames": 100,
+          "seconds": 0.79,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 3,
+          "trainGames": 150,
+          "seconds": 1.17,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 4,
+          "trainGames": 200,
+          "seconds": 1.45,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 5,
+          "trainGames": 250,
+          "seconds": 1.79,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 6,
+          "trainGames": 300,
+          "seconds": 2.12,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 7,
+          "trainGames": 350,
+          "seconds": 2.42,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 8,
+          "trainGames": 400,
+          "seconds": 2.71,
+          "winRate": 0.525,
+          "wins": 21,
+          "draws": 0,
+          "losses": 19
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "algo": "reinforce_value2",
+      "name": "REINFORCE value (2L)",
+      "beat": true,
+      "gaveUp": false,
+      "giveUpReason": null,
+      "secondsToBeat": 0.52,
+      "secondsUsed": 0.52,
+      "trainGames": 50,
+      "chunks": 1,
+      "finalWinRate": 0.525,
+      "timeBudgetSec": 90,
+      "trainGamesPerChunk": 50,
+      "evalGames": 40,
+      "history": [
+        {
+          "chunk": 1,
+          "trainGames": 50,
+          "seconds": 0.52,
+          "winRate": 0.525,
+          "wins": 21,
+          "draws": 0,
+          "losses": 19
+        }
+      ]
+    },
+    {
+      "algo": "nn_value3",
+      "name": "Backprop NN value (3L)",
+      "beat": true,
+      "gaveUp": false,
+      "giveUpReason": null,
+      "secondsToBeat": 1.56,
+      "secondsUsed": 1.56,
+      "trainGames": 200,
+      "chunks": 4,
+      "finalWinRate": 0.6,
+      "timeBudgetSec": 5.2,
+      "trainGamesPerChunk": 50,
+      "evalGames": 40,
+      "history": [
+        {
+          "chunk": 1,
+          "trainGames": 50,
+          "seconds": 0.4,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 2,
+          "trainGames": 100,
+          "seconds": 0.74,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 3,
+          "trainGames": 150,
+          "seconds": 1.15,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 4,
+          "trainGames": 200,
+          "seconds": 1.56,
+          "winRate": 0.6,
+          "wins": 24,
+          "draws": 0,
+          "losses": 16
+        }
+      ]
+    },
+    {
+      "algo": "tfjs_value",
+      "name": "TF.js value 2L",
+      "beat": false,
+      "gaveUp": true,
+      "giveUpReason": "time_cap",
+      "secondsToBeat": null,
+      "secondsUsed": 5.2,
+      "trainGames": 668,
+      "chunks": 14,
+      "finalWinRate": 0,
+      "timeBudgetSec": 5.2,
+      "trainGamesPerChunk": 50,
+      "evalGames": 40,
+      "history": [
+        {
+          "chunk": 1,
+          "trainGames": 50,
+          "seconds": 0.26,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 2,
+          "trainGames": 100,
+          "seconds": 0.53,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 3,
+          "trainGames": 150,
+          "seconds": 0.94,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 4,
+          "trainGames": 200,
+          "seconds": 1.25,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 5,
+          "trainGames": 250,
+          "seconds": 1.6,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 6,
+          "trainGames": 300,
+          "seconds": 1.98,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 7,
+          "trainGames": 350,
+          "seconds": 2.33,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 8,
+          "trainGames": 400,
+          "seconds": 2.7,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 9,
+          "trainGames": 450,
+          "seconds": 2.97,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 10,
+          "trainGames": 500,
+          "seconds": 3.24,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 11,
+          "trainGames": 550,
+          "seconds": 3.87,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 12,
+          "trainGames": 600,
+          "seconds": 4.73,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 13,
+          "trainGames": 650,
+          "seconds": 5.14,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        }
+      ]
+    },
+    {
+      "algo": "tfjs",
+      "name": "TF.js hybrid",
+      "beat": true,
+      "gaveUp": false,
+      "giveUpReason": null,
+      "secondsToBeat": 2.71,
+      "secondsUsed": 2.71,
+      "trainGames": 400,
+      "chunks": 8,
+      "finalWinRate": 0.525,
+      "timeBudgetSec": 5.2,
+      "trainGamesPerChunk": 50,
+      "evalGames": 40,
+      "history": [
+        {
+          "chunk": 1,
+          "trainGames": 50,
+          "seconds": 0.46,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 2,
+          "trainGames": 100,
+          "seconds": 0.79,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 3,
+          "trainGames": 150,
+          "seconds": 1.17,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 4,
+          "trainGames": 200,
+          "seconds": 1.45,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 5,
+          "trainGames": 250,
+          "seconds": 1.79,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 6,
+          "trainGames": 300,
+          "seconds": 2.12,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 7,
+          "trainGames": 350,
+          "seconds": 2.42,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 8,
+          "trainGames": 400,
+          "seconds": 2.71,
+          "winRate": 0.525,
+          "wins": 21,
+          "draws": 0,
+          "losses": 19
+        }
+      ]
+    },
+    {
+      "algo": "reinforce_value3",
+      "name": "REINFORCE value (3L)",
+      "beat": true,
+      "gaveUp": false,
+      "giveUpReason": null,
+      "secondsToBeat": 2.49,
+      "secondsUsed": 2.49,
+      "trainGames": 400,
+      "chunks": 8,
+      "finalWinRate": 0.525,
+      "timeBudgetSec": 5.2,
+      "trainGamesPerChunk": 50,
+      "evalGames": 40,
+      "history": [
+        {
+          "chunk": 1,
+          "trainGames": 50,
+          "seconds": 0.32,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 2,
+          "trainGames": 100,
+          "seconds": 0.62,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 3,
+          "trainGames": 150,
+          "seconds": 0.91,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 4,
+          "trainGames": 200,
+          "seconds": 1.3,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 5,
+          "trainGames": 250,
+          "seconds": 1.58,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 6,
+          "trainGames": 300,
+          "seconds": 1.86,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 7,
+          "trainGames": 350,
+          "seconds": 2.19,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 8,
+          "trainGames": 400,
+          "seconds": 2.49,
+          "winRate": 0.525,
+          "wins": 21,
+          "draws": 0,
+          "losses": 19
+        }
+      ]
+    },
+    {
+      "algo": "nn_value2",
+      "name": "Backprop NN value (2L)",
+      "beat": true,
+      "gaveUp": false,
+      "giveUpReason": null,
+      "secondsToBeat": 0.96,
+      "secondsUsed": 0.96,
+      "trainGames": 150,
+      "chunks": 3,
+      "finalWinRate": 0.55,
+      "timeBudgetSec": 5.2,
+      "trainGamesPerChunk": 50,
+      "evalGames": 40,
+      "history": [
+        {
+          "chunk": 1,
+          "trainGames": 50,
+          "seconds": 0.34,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 2,
+          "trainGames": 100,
+          "seconds": 0.62,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "chunk": 3,
+          "trainGames": 150,
+          "seconds": 0.96,
+          "winRate": 0.55,
+          "wins": 22,
+          "draws": 0,
+          "losses": 18
+        }
+      ]
+    }
+  ]
+}

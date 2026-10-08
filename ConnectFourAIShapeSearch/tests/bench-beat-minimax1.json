@@ -1,0 +1,2333 @@
+{
+  "evalLevel": 1,
+  "beatRule": "winRate > 0.5",
+  "trainOpponent": "random",
+  "trainExplore": true,
+  "evalExplore": false,
+  "opts": {
+    "algos": [
+      "nn3",
+      "nn_value3",
+      "reinforce3",
+      "reinforce_value2",
+      "reinforce_value3",
+      "tfjs_value",
+      "tfjs_value5",
+      "sarsa",
+      "neat",
+      "neat_value",
+      "genetic_menace"
+    ],
+    "trainGames": 50,
+    "evalGames": 40,
+    "maxRounds": 40
+  },
+  "results": [
+    {
+      "algo": "nn3",
+      "name": "Backprop NN (3L)",
+      "beat": false,
+      "roundsToBeat": null,
+      "trainGamesToBeat": null,
+      "finalWinRate": 0.05,
+      "maxRounds": 40,
+      "trainGamesPerRound": 50,
+      "evalGames": 40,
+      "seconds": 8.3,
+      "history": [
+        {
+          "round": 1,
+          "trainGames": 50,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 2,
+          "trainGames": 100,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 3,
+          "trainGames": 150,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 4,
+          "trainGames": 200,
+          "winRate": 0.1,
+          "wins": 4,
+          "draws": 0,
+          "losses": 36
+        },
+        {
+          "round": 5,
+          "trainGames": 250,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 6,
+          "trainGames": 300,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 7,
+          "trainGames": 350,
+          "winRate": 0.1,
+          "wins": 4,
+          "draws": 0,
+          "losses": 36
+        },
+        {
+          "round": 8,
+          "trainGames": 400,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 9,
+          "trainGames": 450,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 10,
+          "trainGames": 500,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 11,
+          "trainGames": 550,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 12,
+          "trainGames": 600,
+          "winRate": 0.125,
+          "wins": 5,
+          "draws": 0,
+          "losses": 35
+        },
+        {
+          "round": 13,
+          "trainGames": 650,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 14,
+          "trainGames": 700,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 15,
+          "trainGames": 750,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 16,
+          "trainGames": 800,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 17,
+          "trainGames": 850,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 18,
+          "trainGames": 900,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 19,
+          "trainGames": 950,
+          "winRate": 0.1,
+          "wins": 4,
+          "draws": 0,
+          "losses": 36
+        },
+        {
+          "round": 20,
+          "trainGames": 1000,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 21,
+          "trainGames": 1050,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 22,
+          "trainGames": 1100,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 23,
+          "trainGames": 1150,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 24,
+          "trainGames": 1200,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 25,
+          "trainGames": 1250,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 26,
+          "trainGames": 1300,
+          "winRate": 0.125,
+          "wins": 5,
+          "draws": 0,
+          "losses": 35
+        },
+        {
+          "round": 27,
+          "trainGames": 1350,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 28,
+          "trainGames": 1400,
+          "winRate": 0.1,
+          "wins": 4,
+          "draws": 0,
+          "losses": 36
+        },
+        {
+          "round": 29,
+          "trainGames": 1450,
+          "winRate": 0.1,
+          "wins": 4,
+          "draws": 0,
+          "losses": 36
+        },
+        {
+          "round": 30,
+          "trainGames": 1500,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 31,
+          "trainGames": 1550,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 32,
+          "trainGames": 1600,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 33,
+          "trainGames": 1650,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 34,
+          "trainGames": 1700,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 35,
+          "trainGames": 1750,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 36,
+          "trainGames": 1800,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 37,
+          "trainGames": 1850,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 38,
+          "trainGames": 1900,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 39,
+          "trainGames": 1950,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 40,
+          "trainGames": 2000,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        }
+      ]
+    },
+    {
+      "algo": "nn_value3",
+      "name": "Backprop NN value (3L)",
+      "beat": true,
+      "roundsToBeat": 12,
+      "trainGamesToBeat": 600,
+      "finalWinRate": 0.6,
+      "maxRounds": 40,
+      "trainGamesPerRound": 50,
+      "evalGames": 40,
+      "seconds": 2.8,
+      "history": [
+        {
+          "round": 1,
+          "trainGames": 50,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 2,
+          "trainGames": 100,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 3,
+          "trainGames": 150,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 4,
+          "trainGames": 200,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 5,
+          "trainGames": 250,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 6,
+          "trainGames": 300,
+          "winRate": 0.5,
+          "wins": 20,
+          "draws": 0,
+          "losses": 20
+        },
+        {
+          "round": 7,
+          "trainGames": 350,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 8,
+          "trainGames": 400,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 9,
+          "trainGames": 450,
+          "winRate": 0.375,
+          "wins": 15,
+          "draws": 0,
+          "losses": 25
+        },
+        {
+          "round": 10,
+          "trainGames": 500,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 11,
+          "trainGames": 550,
+          "winRate": 0.5,
+          "wins": 20,
+          "draws": 0,
+          "losses": 20
+        },
+        {
+          "round": 12,
+          "trainGames": 600,
+          "winRate": 0.6,
+          "wins": 24,
+          "draws": 0,
+          "losses": 16
+        }
+      ]
+    },
+    {
+      "algo": "reinforce3",
+      "name": "REINFORCE (3L)",
+      "beat": false,
+      "roundsToBeat": null,
+      "trainGamesToBeat": null,
+      "finalWinRate": 0.125,
+      "maxRounds": 40,
+      "trainGamesPerRound": 50,
+      "evalGames": 40,
+      "seconds": 7.6,
+      "history": [
+        {
+          "round": 1,
+          "trainGames": 50,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 2,
+          "trainGames": 100,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 3,
+          "trainGames": 150,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 4,
+          "trainGames": 200,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 5,
+          "trainGames": 250,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 6,
+          "trainGames": 300,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 7,
+          "trainGames": 350,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 8,
+          "trainGames": 400,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 9,
+          "trainGames": 450,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 10,
+          "trainGames": 500,
+          "winRate": 0.1,
+          "wins": 4,
+          "draws": 0,
+          "losses": 36
+        },
+        {
+          "round": 11,
+          "trainGames": 550,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 12,
+          "trainGames": 600,
+          "winRate": 0.125,
+          "wins": 5,
+          "draws": 0,
+          "losses": 35
+        },
+        {
+          "round": 13,
+          "trainGames": 650,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 14,
+          "trainGames": 700,
+          "winRate": 0.125,
+          "wins": 5,
+          "draws": 0,
+          "losses": 35
+        },
+        {
+          "round": 15,
+          "trainGames": 750,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 16,
+          "trainGames": 800,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 17,
+          "trainGames": 850,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 18,
+          "trainGames": 900,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 19,
+          "trainGames": 950,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 20,
+          "trainGames": 1000,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 21,
+          "trainGames": 1050,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 22,
+          "trainGames": 1100,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 23,
+          "trainGames": 1150,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 24,
+          "trainGames": 1200,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 25,
+          "trainGames": 1250,
+          "winRate": 0.15,
+          "wins": 6,
+          "draws": 0,
+          "losses": 34
+        },
+        {
+          "round": 26,
+          "trainGames": 1300,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 27,
+          "trainGames": 1350,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 28,
+          "trainGames": 1400,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 29,
+          "trainGames": 1450,
+          "winRate": 0.1,
+          "wins": 4,
+          "draws": 0,
+          "losses": 36
+        },
+        {
+          "round": 30,
+          "trainGames": 1500,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 31,
+          "trainGames": 1550,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 32,
+          "trainGames": 1600,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 33,
+          "trainGames": 1650,
+          "winRate": 0.1,
+          "wins": 4,
+          "draws": 0,
+          "losses": 36
+        },
+        {
+          "round": 34,
+          "trainGames": 1700,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 35,
+          "trainGames": 1750,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 36,
+          "trainGames": 1800,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 37,
+          "trainGames": 1850,
+          "winRate": 0.1,
+          "wins": 4,
+          "draws": 0,
+          "losses": 36
+        },
+        {
+          "round": 38,
+          "trainGames": 1900,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 39,
+          "trainGames": 1950,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 40,
+          "trainGames": 2000,
+          "winRate": 0.125,
+          "wins": 5,
+          "draws": 0,
+          "losses": 35
+        }
+      ]
+    },
+    {
+      "algo": "reinforce_value2",
+      "name": "REINFORCE value (2L)",
+      "beat": true,
+      "roundsToBeat": 1,
+      "trainGamesToBeat": 50,
+      "finalWinRate": 0.525,
+      "maxRounds": 40,
+      "trainGamesPerRound": 50,
+      "evalGames": 40,
+      "seconds": 0.3,
+      "history": [
+        {
+          "round": 1,
+          "trainGames": 50,
+          "winRate": 0.525,
+          "wins": 21,
+          "draws": 0,
+          "losses": 19
+        }
+      ]
+    },
+    {
+      "algo": "reinforce_value3",
+      "name": "REINFORCE value (3L)",
+      "beat": true,
+      "roundsToBeat": 5,
+      "trainGamesToBeat": 250,
+      "finalWinRate": 0.6,
+      "maxRounds": 40,
+      "trainGamesPerRound": 50,
+      "evalGames": 40,
+      "seconds": 1.1,
+      "history": [
+        {
+          "round": 1,
+          "trainGames": 50,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 2,
+          "trainGames": 100,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 3,
+          "trainGames": 150,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 4,
+          "trainGames": 200,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 5,
+          "trainGames": 250,
+          "winRate": 0.6,
+          "wins": 24,
+          "draws": 0,
+          "losses": 16
+        }
+      ]
+    },
+    {
+      "algo": "tfjs_value",
+      "name": "TF.js value 2L",
+      "beat": true,
+      "roundsToBeat": 4,
+      "trainGamesToBeat": 200,
+      "finalWinRate": 0.6,
+      "maxRounds": 40,
+      "trainGamesPerRound": 50,
+      "evalGames": 40,
+      "seconds": 0.8,
+      "history": [
+        {
+          "round": 1,
+          "trainGames": 50,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 2,
+          "trainGames": 100,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 3,
+          "trainGames": 150,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 4,
+          "trainGames": 200,
+          "winRate": 0.6,
+          "wins": 24,
+          "draws": 0,
+          "losses": 16
+        }
+      ]
+    },
+    {
+      "algo": "tfjs_value5",
+      "name": "TF.js value 5L",
+      "beat": true,
+      "roundsToBeat": 7,
+      "trainGamesToBeat": 350,
+      "finalWinRate": 0.65,
+      "maxRounds": 40,
+      "trainGamesPerRound": 50,
+      "evalGames": 40,
+      "seconds": 10.1,
+      "history": [
+        {
+          "round": 1,
+          "trainGames": 50,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 2,
+          "trainGames": 100,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 3,
+          "trainGames": 150,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 4,
+          "trainGames": 200,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 5,
+          "trainGames": 250,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 6,
+          "trainGames": 300,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 7,
+          "trainGames": 350,
+          "winRate": 0.65,
+          "wins": 26,
+          "draws": 0,
+          "losses": 14
+        }
+      ]
+    },
+    {
+      "algo": "sarsa",
+      "name": "SARSA",
+      "beat": false,
+      "roundsToBeat": null,
+      "trainGamesToBeat": null,
+      "finalWinRate": 0,
+      "maxRounds": 40,
+      "trainGamesPerRound": 50,
+      "evalGames": 40,
+      "seconds": 12.6,
+      "history": [
+        {
+          "round": 1,
+          "trainGames": 50,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 2,
+          "trainGames": 100,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 3,
+          "trainGames": 150,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 4,
+          "trainGames": 200,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 5,
+          "trainGames": 250,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 6,
+          "trainGames": 300,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 7,
+          "trainGames": 350,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 8,
+          "trainGames": 400,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 9,
+          "trainGames": 450,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 10,
+          "trainGames": 500,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 11,
+          "trainGames": 550,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 12,
+          "trainGames": 600,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 13,
+          "trainGames": 650,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 14,
+          "trainGames": 700,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 15,
+          "trainGames": 750,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 16,
+          "trainGames": 800,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 17,
+          "trainGames": 850,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 18,
+          "trainGames": 900,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 19,
+          "trainGames": 950,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 20,
+          "trainGames": 1000,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 21,
+          "trainGames": 1050,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 22,
+          "trainGames": 1100,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 23,
+          "trainGames": 1150,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 24,
+          "trainGames": 1200,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 25,
+          "trainGames": 1250,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 26,
+          "trainGames": 1300,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 27,
+          "trainGames": 1350,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 28,
+          "trainGames": 1400,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 29,
+          "trainGames": 1450,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 30,
+          "trainGames": 1500,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 31,
+          "trainGames": 1550,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 32,
+          "trainGames": 1600,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 33,
+          "trainGames": 1650,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 34,
+          "trainGames": 1700,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 35,
+          "trainGames": 1750,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 36,
+          "trainGames": 1800,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 37,
+          "trainGames": 1850,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 38,
+          "trainGames": 1900,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 39,
+          "trainGames": 1950,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 40,
+          "trainGames": 2000,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        }
+      ]
+    },
+    {
+      "algo": "neat",
+      "name": "NEAT",
+      "beat": false,
+      "roundsToBeat": null,
+      "trainGamesToBeat": null,
+      "finalWinRate": 0.075,
+      "maxRounds": 40,
+      "trainGamesPerRound": 50,
+      "evalGames": 40,
+      "seconds": 709.2,
+      "history": [
+        {
+          "round": 1,
+          "trainGames": 50,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 2,
+          "trainGames": 100,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 3,
+          "trainGames": 150,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 4,
+          "trainGames": 200,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 5,
+          "trainGames": 250,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 6,
+          "trainGames": 300,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 7,
+          "trainGames": 350,
+          "winRate": 0.1,
+          "wins": 4,
+          "draws": 0,
+          "losses": 36
+        },
+        {
+          "round": 8,
+          "trainGames": 400,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 9,
+          "trainGames": 450,
+          "winRate": 0.125,
+          "wins": 5,
+          "draws": 0,
+          "losses": 35
+        },
+        {
+          "round": 10,
+          "trainGames": 500,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 11,
+          "trainGames": 550,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 12,
+          "trainGames": 600,
+          "winRate": 0.1,
+          "wins": 4,
+          "draws": 0,
+          "losses": 36
+        },
+        {
+          "round": 13,
+          "trainGames": 650,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 14,
+          "trainGames": 700,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 15,
+          "trainGames": 750,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 16,
+          "trainGames": 800,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 17,
+          "trainGames": 850,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 18,
+          "trainGames": 900,
+          "winRate": 0.125,
+          "wins": 5,
+          "draws": 0,
+          "losses": 35
+        },
+        {
+          "round": 19,
+          "trainGames": 950,
+          "winRate": 0.1,
+          "wins": 4,
+          "draws": 0,
+          "losses": 36
+        },
+        {
+          "round": 20,
+          "trainGames": 1000,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 21,
+          "trainGames": 1050,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 22,
+          "trainGames": 1100,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 23,
+          "trainGames": 1150,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 24,
+          "trainGames": 1200,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 25,
+          "trainGames": 1250,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 26,
+          "trainGames": 1300,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 27,
+          "trainGames": 1350,
+          "winRate": 0.1,
+          "wins": 4,
+          "draws": 0,
+          "losses": 36
+        },
+        {
+          "round": 28,
+          "trainGames": 1400,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 29,
+          "trainGames": 1450,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 30,
+          "trainGames": 1500,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 31,
+          "trainGames": 1550,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 32,
+          "trainGames": 1600,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 33,
+          "trainGames": 1650,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 34,
+          "trainGames": 1700,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 35,
+          "trainGames": 1750,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 36,
+          "trainGames": 1800,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 37,
+          "trainGames": 1850,
+          "winRate": 0.125,
+          "wins": 5,
+          "draws": 0,
+          "losses": 35
+        },
+        {
+          "round": 38,
+          "trainGames": 1900,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 39,
+          "trainGames": 1950,
+          "winRate": 0.1,
+          "wins": 4,
+          "draws": 0,
+          "losses": 36
+        },
+        {
+          "round": 40,
+          "trainGames": 2000,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        }
+      ]
+    },
+    {
+      "algo": "neat_value",
+      "name": "NEAT (value)",
+      "beat": false,
+      "roundsToBeat": null,
+      "trainGamesToBeat": null,
+      "finalWinRate": 0.05,
+      "maxRounds": 40,
+      "trainGamesPerRound": 50,
+      "evalGames": 40,
+      "seconds": 827.2,
+      "history": [
+        {
+          "round": 1,
+          "trainGames": 50,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 2,
+          "trainGames": 100,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 3,
+          "trainGames": 150,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 4,
+          "trainGames": 200,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 5,
+          "trainGames": 250,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 6,
+          "trainGames": 300,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 7,
+          "trainGames": 350,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 8,
+          "trainGames": 400,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 9,
+          "trainGames": 450,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 10,
+          "trainGames": 500,
+          "winRate": 0.1,
+          "wins": 4,
+          "draws": 0,
+          "losses": 36
+        },
+        {
+          "round": 11,
+          "trainGames": 550,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 12,
+          "trainGames": 600,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 13,
+          "trainGames": 650,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 14,
+          "trainGames": 700,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 15,
+          "trainGames": 750,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 16,
+          "trainGames": 800,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 17,
+          "trainGames": 850,
+          "winRate": 0.125,
+          "wins": 5,
+          "draws": 0,
+          "losses": 35
+        },
+        {
+          "round": 18,
+          "trainGames": 900,
+          "winRate": 0.125,
+          "wins": 5,
+          "draws": 0,
+          "losses": 35
+        },
+        {
+          "round": 19,
+          "trainGames": 950,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 20,
+          "trainGames": 1000,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 21,
+          "trainGames": 1050,
+          "winRate": 0.125,
+          "wins": 5,
+          "draws": 0,
+          "losses": 35
+        },
+        {
+          "round": 22,
+          "trainGames": 1100,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 23,
+          "trainGames": 1150,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 24,
+          "trainGames": 1200,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 25,
+          "trainGames": 1250,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 26,
+          "trainGames": 1300,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 27,
+          "trainGames": 1350,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 28,
+          "trainGames": 1400,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 29,
+          "trainGames": 1450,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 30,
+          "trainGames": 1500,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 31,
+          "trainGames": 1550,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 32,
+          "trainGames": 1600,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 33,
+          "trainGames": 1650,
+          "winRate": 0.1,
+          "wins": 4,
+          "draws": 0,
+          "losses": 36
+        },
+        {
+          "round": 34,
+          "trainGames": 1700,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 35,
+          "trainGames": 1750,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 36,
+          "trainGames": 1800,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 37,
+          "trainGames": 1850,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        },
+        {
+          "round": 38,
+          "trainGames": 1900,
+          "winRate": 0.075,
+          "wins": 3,
+          "draws": 0,
+          "losses": 37
+        },
+        {
+          "round": 39,
+          "trainGames": 1950,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 40,
+          "trainGames": 2000,
+          "winRate": 0.05,
+          "wins": 2,
+          "draws": 0,
+          "losses": 38
+        }
+      ]
+    },
+    {
+      "algo": "genetic_menace",
+      "name": "Genetic MENACE",
+      "beat": false,
+      "roundsToBeat": null,
+      "trainGamesToBeat": null,
+      "finalWinRate": 0,
+      "maxRounds": 40,
+      "trainGamesPerRound": 50,
+      "evalGames": 40,
+      "seconds": 10391.3,
+      "history": [
+        {
+          "round": 1,
+          "trainGames": 50,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 2,
+          "trainGames": 100,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 3,
+          "trainGames": 150,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 4,
+          "trainGames": 200,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 5,
+          "trainGames": 250,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 6,
+          "trainGames": 300,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 7,
+          "trainGames": 350,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 8,
+          "trainGames": 400,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 9,
+          "trainGames": 450,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 10,
+          "trainGames": 500,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 11,
+          "trainGames": 550,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 12,
+          "trainGames": 600,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 13,
+          "trainGames": 650,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 14,
+          "trainGames": 700,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 15,
+          "trainGames": 750,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 16,
+          "trainGames": 800,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 17,
+          "trainGames": 850,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 18,
+          "trainGames": 900,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 19,
+          "trainGames": 950,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 20,
+          "trainGames": 1000,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 21,
+          "trainGames": 1050,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 22,
+          "trainGames": 1100,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 23,
+          "trainGames": 1150,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 24,
+          "trainGames": 1200,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 25,
+          "trainGames": 1250,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 26,
+          "trainGames": 1300,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 27,
+          "trainGames": 1350,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 28,
+          "trainGames": 1400,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 29,
+          "trainGames": 1450,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 30,
+          "trainGames": 1500,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 31,
+          "trainGames": 1550,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 32,
+          "trainGames": 1600,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 33,
+          "trainGames": 1650,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 34,
+          "trainGames": 1700,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 35,
+          "trainGames": 1750,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 36,
+          "trainGames": 1800,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 37,
+          "trainGames": 1850,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 38,
+          "trainGames": 1900,
+          "winRate": 0.025,
+          "wins": 1,
+          "draws": 0,
+          "losses": 39
+        },
+        {
+          "round": 39,
+          "trainGames": 1950,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        },
+        {
+          "round": 40,
+          "trainGames": 2000,
+          "winRate": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 40
+        }
+      ]
+    }
+  ]
+}
